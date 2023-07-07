@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Music 2 Graph" Height="450" Width="800" Background="#141414">
+    <Grid>
+        <ScrollViewer Margin="10" Height="240" VerticalAlignment="Top" Background="#242424" HorizontalAlignment="Left" Width="722" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled" UseLayoutRounding="False">
+            <StackPanel Name="NoteSelect" Orientation="Horizontal">
+                <StackPanel Name="Template" MaxWidth="50" Orientation="Vertical" Visibility="Collapsed">
+                    <Button Name="B" Grid.Row="0" Content="B" Width="50" VerticalAlignment="Top" Margin="0 0 0 0" Height="20"/>
+                    <Button Name="A" Grid.Row="0" Content="A" Width="50" VerticalAlignment="Top" Margin="0 0 0 0" Height="20"/>
+                    <Button Name="G" Grid.Row="3" Content="G" Width="50" VerticalAlignment="Top" Margin="0 0 0 0" Height="20"/>
+                    <Button Name="F" Grid.Row="3" Content="F" Width="50" VerticalAlignment="Top" Margin="0 0 0 0" Height="20"/>
+                    <Button Name="E" Grid.Row="3" Content="E" Width="50" VerticalAlignment="Top" Margin="0 0 0 0" Height="20"/>
+                    <Button Name="D" Grid.Row="3" Content="D" Width="50" VerticalAlignment="Top" Margin="0 0 0 0" Height="20"/>
+                    <Button Name="C" Grid.Row="3" Content="C" Width="50" VerticalAlignment="Top" Margin="0 0 0 0" Height="20"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <Grid>
+            <Button Name="AddMoreNotes" Click="AddMoreNotes_Click" Width="35" Padding="0 0 0 0" HorizontalAlignment="Right" Content="{materialDesign:PackIcon plus}" Height="240" VerticalAlignment="Top" Margin=" 0 10 10 0"/>
+        </Grid>
+        <Grid>
+            <TextBox Name="EquationsBox" Margin="20" VerticalAlignment="Bottom" Height="30" Background="#131313" Foreground="White" Text="음계를 찍으세요" VerticalContentAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>
